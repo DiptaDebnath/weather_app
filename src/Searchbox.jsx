@@ -56,9 +56,9 @@ export default function Searchbox({updateInfo}){
         <div className='SearchOption'>         
             <h1>Wheather Report</h1>
             <form action="" onSubmit={handleSubmit}>
-                <TextField id="searc" label="City Name" variant="outlined" value= {city} onChange={handleTextField} required/>
+                <TextField id="searc" label="City Name" variant="outlined" value= {city} onChange={handleTextField} className='Search' required/>
                 <br />
-                <Button variant="contained" type='submit'>Submit</Button>
+                <Button variant="contained" type='submit' className="button">Submit</Button>
             </form>
             {error && <h3 style={{color:"red"}}>location didn't exixt</h3>} 
         </div>

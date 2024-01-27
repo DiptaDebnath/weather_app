@@ -1,3 +1,15 @@
 .SearchOption{
     text-align: center;
 }
+
+.Search{
+    box-shadow: 2px 2px 20px rgb(31, 13, 228);
+}
+
+.button{
+    background: linear-gradient(to right,#13dae0, #040fee)
+}
+
+h1{
+    color: #057f84;
+}

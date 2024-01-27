@@ -11,10 +11,10 @@ import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 export default function WheaterInfo({info}){
     return(
         <div className='info'>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 365 }} className="Main_Card" id="Main_Card">
             <CardMedia
-                sx={{ height: 140 }}
-                image={info.humidity > 80? "./src/assets/Rain.jpg": info.temp > 15? "./src/assets/Hot.jpg" : "./src/assets/Cold.jpg" }
+                sx={{ height: 140}}
+                image={info.humidity > 80? "./src/assets/Rain.jpg": info.temp > 15? "./src/assets/Hot.jpg" : "./src/assets/Cold.jpg"}
                 title="green iguana"
             />
             <CardContent>
@@ -29,7 +29,7 @@ export default function WheaterInfo({info}){
                     <p>Pressure ={info.pressure} pascal</p>
                     <p>Maximum Temperature = {info.tempMax}&deg;C</p>
                     <p>Minimum Temperature ={info.temp_min}&deg;C</p>
-                    <p>The weather can be described as {info.weather} and feels like {info.feelsLike}&deg;C </p>
+                    <p>The weather can be described as {info.weather} and feels like {info.feelsLike}&deg;C</p>
                 </Typography>
             </CardContent>
         </Card>

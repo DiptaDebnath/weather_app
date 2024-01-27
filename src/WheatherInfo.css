@@ -3,3 +3,17 @@
     justify-content: center;
     margin-top: 20px;
 }
+
+#Main_Card{
+    box-shadow: 2px 2px 20px #01577c;
+    background-color: azure;
+    border-radius: 30px;
+}
+
+.image{
+    border-radius: 20px 20px 0 0;
+}
+#Main_Card:hover{
+    box-shadow: 2px 2px 40px #0206de;
+    
+}
